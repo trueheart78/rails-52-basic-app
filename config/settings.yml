@@ -1,0 +1,17 @@
+defaults: &defaults
+  services:
+    login: "https://login.dev.cmmint.net"
+  sudo_consumer: "valid"
+  sudo_secret: "password"
+  secret_key_base: "f07f9de67ff03fb3f4604de53a08c04bad264ab7b7aecbdd726bb7a4d50407c917fb346612e4ce520f9dd6985e6a72c3dc064f46f2e94b617736c00716b2a74d"
+
+development:
+  <<: *defaults
+test:
+  <<: *defaults
+testing:
+  <<: *defaults
+integration:
+  <<: *defaults
+production:
+  <<: *defaults

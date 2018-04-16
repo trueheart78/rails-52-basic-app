@@ -1,0 +1,14 @@
+<header class="container">
+  <div class="row">
+    <div class="col-md-4 text-left">
+      <%= current_user.name %> 
+      <%= gravatar_for current_user %>
+    </div>
+    <div class="col-md-4 text-center">
+      <%= fa_icon :music %>
+    </div>
+    <div class="col-md-4 text-right">
+      <a class="btn-link" href="#">Logout</a>
+    </div>
+  </div>
+</header>
